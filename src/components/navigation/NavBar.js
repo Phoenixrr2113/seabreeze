@@ -11,6 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles(theme => ({
 	root: {
 		flexGrow: 1,
+		paddingTop: 50,
 	},
 	menuButton: {
 		marginRight: theme.spacing(1),
@@ -19,6 +20,9 @@ const useStyles = makeStyles(theme => ({
 		display: 'flex',
 		justifyContent: 'space-between',
 	},
+	title: {
+		fontFamily: `url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt&display=swap')`,
+	},
 }));
 
 export default function ButtonAppBar() {
@@ -26,12 +30,14 @@ export default function ButtonAppBar() {
 
 	return (
 		<div className={classes.root}>
-			<AppBar color='default' position='static'>
+			<AppBar color='default' position='fixed'>
 				<Container maxWidth='md'>
 					<Toolbar className={classes.links}>
-						<Typography variant='h6' className={classes.title}>
-							Sea Breeze
-						</Typography>
+						<Button>
+							<Typography variant='h6' className={classes.title}>
+								Sea Breeze
+							</Typography>
+						</Button>
 						<Button color='inherit'>Our Story</Button>
 						<Button color='inherit'>Menu</Button>
 						<Button color='inherit'>Contact</Button>
