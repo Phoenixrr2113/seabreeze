@@ -3,8 +3,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import NavBar from '../navigation/NavBar';
-import Footer from '../footer/Footer';
+import NavBar from '../components/navigation/NavBar';
+import Footer from '../components/footer/Footer';
 
 const useStyles = makeStyles(theme => ({
 	root: {

@@ -33,11 +33,10 @@ export default function ButtonAppBar() {
 			<AppBar color='default' position='fixed'>
 				<Container maxWidth='md'>
 					<Toolbar className={classes.links}>
-						<Button>
-							<Typography variant='h6' className={classes.title}>
-								Sea Breeze
-							</Typography>
-						</Button>
+						<Typography variant='h6' className={classes.title}>
+							Sea Breeze
+						</Typography>
+
 						<Button color='inherit'>Our Story</Button>
 						<Button color='inherit'>Menu</Button>
 						<Button color='inherit'>Contact</Button>

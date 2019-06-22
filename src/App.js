@@ -1,8 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import './App.css';
-import Layout from './components/layout/Layout';
-import Home from './pages/Home';
+
+import Routes from './routes/Routes';
+import Layout from './layout/Layout';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -22,7 +23,7 @@ function App() {
 	return (
 		<div className={classes.root}>
 			<Layout>
-				<Home />
+				<Routes />
 			</Layout>
 		</div>
 	);
